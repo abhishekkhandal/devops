@@ -17,6 +17,11 @@ then
 fi
 
 echo " "
+echo "Checking for Wireguard kernel support ..."
+apt install -y wireguard wireguard-tools wireguard-dkms
+
+
+echo " "
 if ! command -v docker &> /dev/null
 then
   echo "Docker not found on the system, installing ..."
