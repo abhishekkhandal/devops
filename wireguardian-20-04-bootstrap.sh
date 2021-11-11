@@ -109,5 +109,3 @@ networks:
 EOT
 
 docker network create wireguardian_wg_ingress
-cd ${INSTALL_DIR}
-docker-compose up -d
